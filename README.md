@@ -6,7 +6,8 @@ Sistema de Eventos encomendando pela Morena.
 
 1- Instale git e python3-pip
 ```console
-sudo apt-get install git python3-pip
+sudo apt-get install git python3-pip python3-dev python3-setuptools \
+python3-venv
 ```
 2- Instale o virtualenvwrapper.
 ```console
