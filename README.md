@@ -2,6 +2,8 @@
 
 Sistema de Eventos encomendando pela Morena.
 
+[![Build Status](https://travis-ci.org/puera/eventex.svg?branch=master)](https://travis-ci.org/puera/eventex)
+[![Maintainability](https://api.codeclimate.com/v1/badges/82593eacca7658fcbf1f/maintainability)](https://codeclimate.com/github/puera/eventex/maintainability)
 ## Como desenvolver?
 
 1- Instale git e python3
