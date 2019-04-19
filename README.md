@@ -4,7 +4,7 @@ Sistema de Eventos encomendando pela Morena.
 
 ## Como desenvolver?
 
-1- Instale git e python3-pip
+1- Instale git e python3
 ```console
 sudo apt-get install git python3-pip python3-dev python3-setuptools \
 python3-venv
