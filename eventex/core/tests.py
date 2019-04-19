@@ -8,8 +8,11 @@ class HomeTest(TestCase):
     def test_get(self):
         """GET / deve retorna status code 200"""
 
-        self.assertEqual(200,self.response.status_code)
+        self.assertEqual(200, self.response.status_code)
 
     def test_template(self):
         """Deve retorna index.html no response"""
         self.assertTemplateUsed(self.response, 'index.html')
+
+    def test_subscription_link(self):
+        self.assertContains(self.response, 'href="/inscricao/"')
