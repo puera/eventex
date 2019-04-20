@@ -48,7 +48,7 @@ workon eventex
 ```
 9- Instale as dependências do eventex.
 ```console
-pip install -r /var/projetos/eventex/requirements.txt
+pip install -r /var/projetos/eventex/requirements/dev-requirements.txt
 ```
 10- Ajuste as permissões.
 ```console
