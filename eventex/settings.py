@@ -34,7 +34,7 @@ DEFAULT_FROM_EMAIL = 'contato@eventex.com'
 # Eventex Apps
 EVENTEX_APPS = [
     'eventex.core',
-    'eventex.subscriptions',
+    'eventex.subscriptions.apps.SubscriptionsConfig',
 ]
 # Application definition
 INSTALLED_APPS = [
