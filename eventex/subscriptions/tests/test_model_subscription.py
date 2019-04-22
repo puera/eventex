@@ -1,6 +1,6 @@
 from datetime import datetime
+
 from django.test import TestCase
-from django.utils.timezone import now
 
 from eventex.subscriptions.models import Subscription
 
@@ -11,7 +11,7 @@ class SubscriptionModelTest(TestCase):
                            name='Renann Souza',
                            cpf='12345678912',
                            email='puera@mailinator.com',
-                           phone='22123456789')
+                           phone='22123456789',)
         self.obj.save()
 
     def test_create(self):
@@ -24,3 +24,6 @@ class SubscriptionModelTest(TestCase):
     def test_str(self):
         self.assertEqual('Renann Souza', str(self.obj))
 
+    def test_paid_default_to_false(self):
+        """Por padrão paid deve ser False."""
+        self.assertEqual(False, self.obj.paid)

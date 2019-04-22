@@ -5,10 +5,10 @@ from eventex.subscriptions.models import Subscription
 
 class SubscriptionModelAdmin(admin.ModelAdmin):
     list_display = ('name', 'email', 'cpf', 'phone', 'created_at',
-                    'subscribed_today')
+                    'subscribed_today', 'paid')
     date_hierarchy = 'created_at'
-    search_fields = ('name', 'email', 'cpf', 'phone', 'created_at')
-    list_filter = ('created_at',)
+    search_fields = ('name', 'email', 'cpf', 'phone', 'created_at', 'paid')
+    list_filter = ('paid', 'created_at')
 
     def subscribed_today(self, obj):
         return obj.created_at == now().date()
