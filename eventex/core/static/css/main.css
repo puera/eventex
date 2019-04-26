@@ -348,7 +348,7 @@ section header h2 {
 
 }
 
-    .alert {
+.alert {
         padding: 0 15px;
         margin-bottom: 1rem;
         border: 1px solid transparent;
@@ -362,4 +362,13 @@ section header h2 {
         background-color: #dff0d8;
         border-color: #d0e9c6;
     }
+
+.speakers h2{
+    text-transform: uppercase;
+}
+
+.speakers img{
+    width: 200px;
+    border-radius: 100%;
+}
 /* Fim Customização */
